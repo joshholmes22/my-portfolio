@@ -5,7 +5,7 @@
 
 ## Deployed URL
 
-You can find the application deployed to github pages [here]()
+You can find the application deployed to github pages [here](https://glowingmanagement.github.io/my-portfolio/)
 
 ## Technologies
 
