@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html {
+    font-size: 10px;
+}
+  
+  section{
+    padding: 10rem 20rem;
+  }
+  
+  .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgb(3, 3, 3, 0);
+      transition: 2s;
+      z-index: 1;
+  }
+  
+  /* Nav Bar */
+  .nav-links-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  
+  .nav-link {
+      margin: 1.6rem;
+      font-family: 'Raleway', sans-serif;
+  }
+  
+  .nav-link a {
+      text-decoration: none;
+      font-size: 2rem;
+  }
+  
+  
+  .nav-link a:hover {
+      color: var(--card-background-dark);
+  }
+  
+  
+  .icon {
+      font-size: 3.5rem;
+      color: #fff;
+  }
+
+  
+.main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/no-bkg-profile.png"), url("../svg/Animated\ Shape.svg");
+    background-size: 30%, cover;
+    background-repeat: no-repeat;
+    background-position: 70% 0%, center;
+    background-attachment: fixed;
+  }
+  
+  .main .content h2{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+  
+  .main .content h2 span{
+    font-size: 10rem;
+    font-weight: 600;
+  }
+  
+  .animated-text{
+    position: relative;
+    height: 7rem;
+    overflow: hidden;
+  }
+  
+  .animated-text h3{
+    color: #4e9eff;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 7rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .animated-text h3:nth-child(1){
+    animation: text-move 10s infinite;
+  }
+  
+  @keyframes text-move{
+    0%{
+      margin-top: 0;
+    }
+    25%{
+      margin-top: -70px;
+    }
+    50%{
+      margin-top: -140px;
+    }
+    75%{
+      margin-top: -70px;
+    }
+    100%{
+      margin-top: 0;
+    }
+  }
+
+  
+.btn{
+    color: #fff;
+    background: #3a6cf4;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    border-radius: 0.2rem;
+    margin-top: 3rem;
+    transition: 0.5s ease;
+  }
+  
+  .btn:hover{
+    background: #235bf6;
+  }
+
+  
+body{
+    min-height: 110vh;
+  }
+  
+  .background-img {
+      width: 40%;
+  }
+  
+  
+  .title{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .section-title{
+      position: relative;
+      color: #3a6cf4;
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 0.6rem;
+    }
+    
+    .section-title:before{
+      content: '';
+      position: absolute;
+      top: 56px;
+      left: 50%;
+      width: 14rem;
+      height: 0.4rem;
+      background: #3a6cf4;
+      transform: translateX(-50%);
+    }
+    
+    .section-title:after{
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: #3a6cf4;
+      transform: translateX(-50%);
+    }
+  
+  .projects{
+      background: #000016;
+    }
+    
+    .projects-content{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    
+    .projects-card{
+      width: 34rem;
+      margin: 1.5rem;
+    }
+    
+    .card-img{
+      position: relative;
+      width: 100%;
+      height: 26rem;
+      overflow: hidden;
+      border-radius: 1rem;
+    }
+    
+    .card-img img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+      transition: 0.5s ease;
+    }
+    
+    .card-img img:hover{
+      transform: scale(1.2);
+    }
+  
+
+    
+  .about-content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+  
+  .col-left{
+    position: relative;
+    width: 45%;
+  }
+  
+  .col-right{
+    position: relative;
+    width: 50%;
+  }
+  
+  .about-img-card{
+    position: relative;
+    width: 100%;
+    min-height: 45rem;
+  }
+  
+  .about-img-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .content-title{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .paragraph-text{
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
